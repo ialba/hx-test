@@ -1,5 +1,5 @@
 .flickr-card{
-  max-width: 300px;
+  max-width: 350px;
   float: left;
   margin: 15px;
 
@@ -7,6 +7,6 @@
 
 mat-card img{
   object-fit: cover;
-  width: 350px;
+  width: 400px;
   height: 250px;
 }

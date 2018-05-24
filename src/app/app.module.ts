@@ -12,7 +12,9 @@ import {
   MatFormFieldModule,
   MatInputModule,
   MatChipsModule,
-  MatGridListModule } from '@angular/material';
+  MatGridListModule,
+  MatBadgeModule,
+  MatTooltipModule} from '@angular/material';
 
 
 import { AppComponent } from './app.component';
@@ -40,7 +42,9 @@ import { ApiService} from './services/api.service';
     MatInputModule,
     HttpModule,
     MatChipsModule,
-    MatGridListModule
+    MatGridListModule,
+    MatBadgeModule,
+    MatTooltipModule
   ],
   providers: [ ApiService ],
   bootstrap: [AppComponent]

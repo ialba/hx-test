@@ -6,6 +6,6 @@ export interface Photo {
   link?               : string;
   media?              : any;
   published?          : Date;
-  tags?               : string[];
+  tags?               : string;
   title               : string;
 }

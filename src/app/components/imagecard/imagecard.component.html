@@ -1,11 +1,11 @@
 <mat-card class="flickr-card">
   <img mat-card-image [src]="photo.media.m" [alt]="photo.title">
   <mat-card-content>
-    <a tarjet="_blank" [href]="photo.link">{{ photo.title }} </a>
+    <a tarjet="_blank" [href]="photo.link">{{ photo.title | slice:0:20 }} </a>
     <small>by <a tarjet="_blank" [href]="'https://www.flickr.com/people/'+photo.author_id">{{ photo.author.replace('nobody@flickr.com (\"', '').replace('\")', '') }}</a></small>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat convallis neque, non ultricies neque sollicitudin sed. Aliquam luctus elit eget turpis fermentum auctor.</p>
-    <mat-chip-list *ngIf="photo.tags != ''">
-      <mat-chip *ngFor="let tag of photo.tags.split(' ')">{{tag}}</mat-chip>
-    </mat-chip-list>
+
+    <mat-icon [matTooltip]="photo.tags" [matBadge]="photo.tags != '' ? photo.tags.trim().split(' ').length : 0" matBadgeColor="warn">label</mat-icon>
+    <mat-icon matBadge="15" matBadgeColor="warn">comment</mat-icon>
   </mat-card-content>
 </mat-card>
