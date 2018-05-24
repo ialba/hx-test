@@ -1,4 +1,4 @@
 <mat-form-field class="search-form">
-  <input matInput placeholder="Search Picture" type="text">
+  <input matInput [(ngModel)]="searchTerm" placeholder="Search Picture" type="text">
 </mat-form-field>
-<button button="submit" mat-raised-button color="primary">Search</button>
+<button button="submit" (click)="filterList()" mat-raised-button color="primary">Search</button>

@@ -15,7 +15,6 @@ export class ImagecardComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.photo.tags.trim().split(' '))
   }
 
 }
