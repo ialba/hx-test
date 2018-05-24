@@ -17,8 +17,6 @@ export class SearchbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  filterList(){
-    console.log(this.searchTerm);
-  }
+
 
 }

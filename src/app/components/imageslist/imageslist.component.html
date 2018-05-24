@@ -1,3 +1,8 @@
+<mat-form-field class="search-form flex">
+  <input matInput (keyup)="filterList()" [(ngModel)]="searchTerm" placeholder="Search Picture" type="text">
+</mat-form-field>
+<button button="submit" (click)="filterList()" mat-raised-button color="primary">Search</button>
+<br  />
 <app-imagecard
   *ngFor="let photo of photos"
   [photo]="photo">
